@@ -18,3 +18,32 @@ export const App = () => {
     </div>
   );
 };
+/*
+import { meteorPromise } from "./Helpers";
+import { useEffect } from "react";
+
+useEffect(() => {
+  meteorPromise("getConfig").then((config) => {
+    console.log(config);
+  });
+}, []);
+
+const onSave = async (config) => {
+  await meteorPromise("onSaveConfig", { config });
+};
+
+
+const saveButton = (
+  <button
+    onClick={() =>
+      onSave({
+        color: "blue",
+        shape: "cross",
+        opacityConfig: "half_opacity",
+      })
+    }
+  >
+    Save Config To DB
+  </button>
+);
+*/
